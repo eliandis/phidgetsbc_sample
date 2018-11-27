@@ -79,7 +79,7 @@ public class SensorReader
 				}
             	if (str != 0 && sensorType > 0){
             		try{
-            			String url = GET_URL + "?sensor="+sensorType+"&value="+str;
+            			String url = GET_URL + "?sensor="+sensorType+"&source=1&value="+str;
             			System.out.println(url);
             			URL obj = new URL(url);
             			HttpURLConnection con = (HttpURLConnection) obj.openConnection();            			
